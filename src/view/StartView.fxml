@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="startPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../application/Launcher.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="start.StartController">
+   <center>
+      <Pane fx:id="startPane" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" style="-fx-border-style: solid;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="signInPane" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" style="-fx-border-style: solid; -fx-border-color: #eee;">
+               <children>
+                  <JFXButton layoutX="280.0" layoutY="330.0" mnemonicParsing="false" onAction="#Login" prefHeight="30.0" prefWidth="69.0" text="登录" />
+                  <JFXTextField fx:id="usernameField_1" labelFloat="true" layoutX="50.0" layoutY="125.0" maxHeight="30.0" maxWidth="300.0" minHeight="30.0" minWidth="300.0" promptText="USERNAME" text="luvwind">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXTextField>
+                  <JFXPasswordField fx:id="passwordField_1" labelFloat="true" layoutX="50.0" layoutY="185.0" maxHeight="30.0" maxWidth="300.0" minHeight="30.0" minWidth="300.0" promptText="PASSWORD" text="password">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXPasswordField>
+                  <Label layoutX="50.0" layoutY="37.0" prefHeight="45.0" prefWidth="74.0" style="-fx-border-top: solid;" text="登录" textFill="#000000b2">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="76.0" prefHeight="15.0" prefWidth="88.0" text="LOGIN" textFill="#ff7700cc">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="235.0" text="没有账户？" />
+                  <Hyperlink layoutX="104.0" layoutY="232.0" onAction="#ToSignUp" text="创建一个！" />
+                  <Text fx:id="passwordHint_1" fill="RED" layoutX="212.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="137.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="usernameHint_1" fill="RED" layoutX="192.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="157.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <JFXBadge layoutX="110.0" layoutY="330.0" prefHeight="35.0" prefWidth="84.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="signUpPane" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" style="-fx-border-style: solid; -fx-border-color: #eee;" visible="false">
+               <children>
+                  <JFXButton fx:id="rigisterBtn" layoutX="280.0" layoutY="330.0" mnemonicParsing="false" onAction="#Rigister" prefHeight="30.0" prefWidth="69.0" text="注册" />
+                  <JFXTextField fx:id="usernameField_2" labelFloat="true" layoutX="50.0" layoutY="125.0" maxHeight="30.0" maxWidth="300.0" minHeight="30.0" minWidth="300.0" promptText="USERNAME">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXTextField>
+                  <JFXPasswordField fx:id="passwordField_2" labelFloat="true" layoutX="50.0" layoutY="185.0" maxHeight="30.0" maxWidth="300.0" minHeight="30.0" minWidth="300.0" promptText="PASSWORD">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXPasswordField>
+                  <Label layoutX="50.0" layoutY="37.0" prefHeight="45.0" prefWidth="74.0" style="-fx-border-top: solid;" text="注册" textFill="#000000b2">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="76.0" prefHeight="34.0" prefWidth="119.0" text="RIGISTER" textFill="#ff7700cc">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <JFXPasswordField fx:id="passagainField" labelFloat="true" layoutX="50.0" layoutY="245.0" maxHeight="30.0" maxWidth="300.0" minHeight="30.0" minWidth="300.0" promptText="CONFIRM PASSWORD">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXPasswordField>
+                  <Label layoutX="50.0" layoutY="295.0" text="已有账号？" />
+                  <Hyperlink layoutX="104.0" layoutY="292.0" onAction="#ToSignIn" text="现在登录！" />
+                  <Text fx:id="usernameHint_2" fill="RED" layoutX="163.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="186.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="passagainHint" fill="RED" layoutX="187.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="162.240234375">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="passwordHint_2" fill="RED" layoutX="176.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="173.240234375">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Pane>
+   </center>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</BorderPane>

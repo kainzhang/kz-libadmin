@@ -1,0 +1,72 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+* {
+    -fx-themecolor : #1e262c;
+    -fx-bgcolor: #fff;
+    -fx-primary : #fff;
+    -fx-secondary : #f56c2d;
+
+}
+
+
+/*TableView Default*/
+.table-view{
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-font-size: 10px; 
+}
+.table-row-cell {
+    -fx-cell-size: 20px;
+}
+.table-view .column-header-background{
+    -fx-background-color: -fx-primary;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 2 0;
+    -fx-pref-height: 25px;
+    -fx-border-color: -fx-secondary;
+}
+.table-view .table-cell{
+    -fx-text-fill: -fx-themecolor;
+}
+.table-row-cell{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+.table-column{
+    -fx-alignment: CENTER;  
+}
+.table-row-cell:even{
+    -fx-background-color: derive(-fx-primary, 10%);
+}
+.table-row-cell:selected {
+    -fx-background-color:  transparent;
+    -fx-text-fill: -fx-primary;
+    -fx-background-insets: 0;
+}
+.placeholder .label{
+    -fx-text-fill: white;
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: -fx-bgcolor;
+}
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-text-fill: white;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb{
+    -fx-background-color: derive(-fx-secondary, 30%);
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+.table-view .filler{
+	-fx-padding: 0.5em 0em 0.5em 0em;
+    -fx-fill: -fx-primary;
+    -fx-background-color: -fx-primary;
+}

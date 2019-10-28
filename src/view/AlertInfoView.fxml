@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="contentPane" minHeight="720.0" minWidth="1030.0" prefHeight="720.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alertinfo.AlertInfoController">
+   <children>
+      <TableView fx:id="tableView" editable="true" fixedCellSize="0.0" layoutY="200.0" onMouseClicked="#fillIdField" pickOnBounds="false" prefHeight="520.0" prefWidth="1030.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+        <columns>
+          <TableColumn fx:id="aidCol" minWidth="100.0" prefWidth="150.0" text="ID" />
+          <TableColumn fx:id="isbnCol" minWidth="100.0" prefWidth="150.0" text="ISBN" />
+            <TableColumn fx:id="detailCol" minWidth="100.0" prefWidth="150.0" text="DETAIL" />
+            <TableColumn fx:id="dateCol" minWidth="100.0" prefWidth="150.0" text="DATE" />
+            <TableColumn fx:id="isvalidCol" minWidth="100.0" prefWidth="150.0" text="STATE" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton layoutX="495.0" layoutY="93.0" text="DELETE" AnchorPane.rightAnchor="460.0" />
+      <JFXButton layoutX="576.0" layoutY="93.0" onAction="#showAlertInfos" prefHeight="23.0" prefWidth="83.0" text="REFRESH" AnchorPane.rightAnchor="370.0" />
+      <TextField fx:id="aidField" editable="false" layoutX="330.0" layoutY="93.0" prefHeight="23.0" prefWidth="165.0" promptText="ID" AnchorPane.rightAnchor="532.0" />
+   </children>
+</AnchorPane>

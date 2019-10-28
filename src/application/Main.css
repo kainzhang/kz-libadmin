@@ -1,0 +1,51 @@
+.jfx-button{
+    -fx-font-size: 12px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: transparent;
+    -fx-text-fill: #bbb;
+}
+#contentPane{
+	-fx-background-image:url("../../img/img_8.jpg");
+	-fx-background-position: -100 0;
+}
+
+.hyperlink{
+	-fx-text-fill:#bbb;
+}
+.hyperlink:hover{
+	-fx-text-fill:#fff;
+}
+
+#Book,#Snp,#Category,#Order,#AlertInfo,#User{
+	-fx-background-radius: 0;
+	-fx-background-color: transparent;
+}
+
+#Book:focused,#Snp:focused,#Category:focused,#Order:focused,#AlertInfo:focused,#User:focused{
+}
+
+#Book:hover, #Snp:hover, #Category:hover, #Order:hover, #AlertInfo:hover, #User:hover{
+	-fx-background-color: rgb(58,67,76);
+	-fx-border-width: 0 0 0 4;
+	-fx-border-color: transparent;
+}
+
+/* rgb(75��82��89) */
+
+#logoutBtn{
+	-fx-text-fill: #fff;
+	-fx-background-radius: 25;
+	-fx-background-color: rgb(245,108,45);
+}
+
+#Client{
+	-fx-text-fill: #fff;
+	-fx-background-radius: 25;
+	-fx-border-width: 1px;
+	-fx-border-color: #fff;
+	-fx-border-radius: 25;
+}
+
+#menuPane{
+	-fx-background-color: #1e262c;
+}

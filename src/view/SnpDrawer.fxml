@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="520.0" minWidth="1030.0" prefHeight="520.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snp.SnpDrawerController">
+   <children>
+      <Line endX="500.0" layoutX="80.0" layoutY="83.0" stroke="#ff5500" />
+      <Text fx:id="drawerTitle" layoutX="80.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Supplier and Seller" wrappingWidth="418.095703125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="nameField" layoutX="277.0" layoutY="171.0" promptText="NAME" />
+      <JFXTextField fx:id="ownerField" layoutX="277.0" layoutY="217.0" promptText="OWNER" />
+      <JFXTextField fx:id="otitleField" layoutX="277.0" layoutY="259.0" promptText="OWNER TITLE" />
+      <JFXTextField fx:id="telField" layoutX="277.0" layoutY="300.0" promptText="TEL" />
+      <JFXTextField fx:id="addrField" layoutX="548.0" layoutY="177.0" promptText="ADDRESS" />
+      <JFXTextField fx:id="bankField" layoutX="548.0" layoutY="217.0" promptText="BANK" />
+      <JFXTextField fx:id="bankidField" layoutX="548.0" layoutY="263.0" promptText="BANK ID" />
+      <JFXButton layoutX="730.0" layoutY="359.0" onAction="#insertSnp" prefHeight="45.0" prefWidth="128.0" text="SUBMIT" />
+      <JFXRadioButton fx:id="supplier" layoutX="548.0" layoutY="321.0" text="SUPPLIER">
+         <toggleGroup>
+            <ToggleGroup fx:id="snpType" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="seller" layoutX="548.0" layoutY="350.0" text="SELLER" toggleGroup="$snpType" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+#startPane{
+	-fx-background-image:url("../../img/img_13.jpg");
+	-fx-background-position:center;
+}
+
+#startPane {
+	-fx-background-color:transparent;
+}
+#signInPane{
+	-fx-background-color:rgba(255,255,255,0.9);
+}
+#signUpPane{
+	-fx-background-color:rgba(255,255,255,0.9);
+}

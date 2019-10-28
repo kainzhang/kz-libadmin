@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="520.0" minWidth="1030.0" prefHeight="520.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="order.OrderDrawerController">
+   <children>
+      <JFXTextField fx:id="isbnField" labelFloat="true" layoutX="264.0" layoutY="167.0" promptText="ISBN">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="quantityField" labelFloat="true" layoutX="543.0" layoutY="167.0" promptText="QUANTITY">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="unitpriceField" labelFloat="true" layoutX="543.0" layoutY="245.0" promptText="UNIT PRICE">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="snpidField" labelFloat="true" layoutX="264.0" layoutY="241.0" promptText="FIRM ID">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXButton layoutX="720.0" layoutY="349.0" onAction="#insertOrder" prefHeight="45.0" prefWidth="128.0" text="SUBMIT" />
+      <Text fx:id="drawerTitle" layoutX="67.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD NEW ORDER" wrappingWidth="267.095703125" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Line endX="500.0" layoutX="70.0" layoutY="73.0" stroke="#ff5500" />
+      <JFXRadioButton fx:id="orderP" layoutX="550.0" layoutY="303.0" text="PURCHASE ORDER">
+         <toggleGroup>
+            <ToggleGroup fx:id="orderType" />
+         </toggleGroup>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="orderS" layoutX="411.0" layoutY="303.0" selected="true" text="SALE ORDER" toggleGroup="$orderType">
+         <font>
+            <Font size="15.0" />
+         </font></JFXRadioButton>
+      <JFXButton layoutX="459.0" layoutY="167.0" onAction="#checkIsbn" prefHeight="30.0" prefWidth="56.0" text="CHECK" />
+      <Text fx:id="isbnHint" layoutX="264.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="174.30029296875" />
+      <Text fx:id="quantityHint" layoutX="543.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="174.30029296875" />
+      <JFXButton layoutX="459.0" layoutY="241.0" onAction="#checkSnpid" prefHeight="30.0" prefWidth="56.0" text="CHECK" />
+      <Text fx:id="snpidHint" layoutX="264.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="174.30029296875" />
+      <Text fx:id="submitHint" layoutX="588.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="121.0" />
+   </children>
+</AnchorPane>

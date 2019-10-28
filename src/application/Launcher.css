@@ -1,0 +1,122 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+* {
+    -fx-themecolor : #1e262c;
+    -fx-bgcolor: #edf1f2;
+    -fx-primary : #edf1f2;
+    -fx-secondary : #f56c2d;
+
+}
+
+
+
+.jfx-button{
+	-fx-text-fill: -fx-secondary;
+	-fx-background-radius: 10;
+	-fx-background-color:-fx-primary;
+	/*-fx-background-color: #666;*/
+}
+
+.jfx-textfield{
+	-fx-text-fill: WHITE;
+}
+
+#pageBtn{
+	-fx-background-color: transparent;
+}
+#pageBtn:hover{
+	-fx-background-color: #aaa;
+	-fx-text-fill: #fff;
+}
+
+/*TableView Default*/
+.table-view{
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-font-size: 16px; 
+}
+.table-view:focused{
+    -fx-background-color:derive(-fx-secondary, 15%);
+}
+.table-row-cell {
+    -fx-cell-size: 45px;
+}
+.table-view .column-header-background{
+    -fx-background-color: -fx-primary;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .table-cell{
+    -fx-text-fill: -fx-themecolor;
+}
+.table-row-cell:focused, .table-cell:focused{
+    -fx-text-fill: #fff;
+}
+.table-row-cell{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+.table-column{
+    -fx-alignment: CENTER;  
+}
+.table-row-cell:even{
+    -fx-background-color: derive(-fx-primary, 10%);
+}
+.table-row-cell:selected {
+    -fx-background-color:  derive(-fx-secondary, 30%);
+    -fx-text-fill: -fx-primary;
+    -fx-background-insets: 0;
+}
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: -fx-primary;
+}
+.placeholder .label{
+    -fx-text-fill: white;
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: -fx-bgcolor;
+}
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-text-fill: white;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb{
+    -fx-background-color: derive(-fx-secondary, 30%);
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+.table-view .filler{
+	-fx-padding: 0.5em 0em 0.5em 0em;
+    -fx-fill: -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+.table-context
+{
+    -fx-base: -fx-primary;
+}
+.column-header{
+	-fx-text-fill:#fff;
+}
+
+.list-view{
+	-fx-font-size:15px;
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: derive(-fx-secondary, 40%);
+    -fx-text-fill: white;
+}
+
+.list-cell:even {
+    -fx-background-color: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: derive(-fx-secondary, 60%);
+    -fx-text-fill: white;
+}

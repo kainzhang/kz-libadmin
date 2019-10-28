@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="contentPane" minHeight="720.0" minWidth="1030.0" prefHeight="720.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.UserController">
+   <children>
+      <TableView fx:id="tableView" editable="true" layoutY="200.0" onMouseClicked="#fillTheBlanks" pickOnBounds="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+        <columns>
+          <TableColumn fx:id="usernameCol" maxWidth="400.0" minWidth="0.0" prefWidth="-1.0" text="USERNAME" />
+          <TableColumn fx:id="passwordCol" maxWidth="400.0" minWidth="0.0" prefWidth="-1.0" text="PASSWORD" />
+          <TableColumn fx:id="positionCol" maxWidth="400.0" minWidth="0.0" prefWidth="-1.0" text="POSITION" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="usernameField" layoutX="181.0" layoutY="47.0" prefHeight="23.0" prefWidth="147.0" promptText="USERNAME" AnchorPane.leftAnchor="180.0" />
+      <TextField fx:id="newpasswordField" layoutX="181.0" layoutY="88.0" prefHeight="23.0" prefWidth="147.0" promptText="NEW PASSWORD" AnchorPane.leftAnchor="180.0" />
+      <JFXButton fx:id="searchUser" layoutX="345.0" layoutY="47.0" onAction="#searchUser" scaleShape="false" text="SEARCH" AnchorPane.leftAnchor="350.0" />
+      <JFXButton fx:id="updateUser" layoutX="345.0" layoutY="88.0" onAction="#updateUser" prefHeight="23.0" prefWidth="64.0" text="UPDATE" AnchorPane.leftAnchor="350.0" />
+      <JFXButton fx:id="deleteUser" layoutX="348.0" layoutY="128.0" onAction="#deleteUser" prefHeight="23.0" prefWidth="64.0" text="DELETE" AnchorPane.leftAnchor="350.0" />
+      <TextField fx:id="addUsernameField" layoutX="515.0" layoutY="45.0" promptText="USERNAME" AnchorPane.rightAnchor="350.0" />
+      <TextField fx:id="passwordField" layoutX="515.0" layoutY="87.0" promptText="PASSWORD" AnchorPane.rightAnchor="350.0" />
+      <TextField fx:id="positionField" layoutX="515.0" layoutY="127.0" promptText="POSITION(0-2)" AnchorPane.rightAnchor="350.0" />
+      <JFXButton fx:id="addUser" layoutX="716.0" layoutY="46.0" onAction="#insertUser" text="ADD USER" AnchorPane.rightAnchor="240.0" />
+      <JFXButton fx:id="showUsers" layoutX="900.0" layoutY="45.0" onAction="#showUsers" prefHeight="23.0" prefWidth="83.0" text="REFRESH" AnchorPane.rightAnchor="60.0" />
+      <TextField fx:id="oldpositionField" layoutX="181.0" layoutY="128.0" prefHeight="23.0" prefWidth="147.0" promptText="POSITION" AnchorPane.leftAnchor="180.0" />
+      <JFXButton layoutX="900.0" layoutY="87.0" onAction="#exportAsPDF" prefHeight="23.0" prefWidth="83.0" text="PRINT" AnchorPane.rightAnchor="60.0" />
+   </children>
+</AnchorPane>
